@@ -17,6 +17,7 @@
         "sourceType": "module"
     },
     "plugins": [
+        "@emotion",
         "react",
         "@typescript-eslint",
         "html"
@@ -34,7 +35,11 @@
                 "ts": "never",
                 "tsx": "never"
             }
-        ]
+        ],
+        "@emotion/jsx-import": "error",
+        "@emotion/no-vanilla": "error",
+        "@emotion/import-from-emotion": "error",
+        "@emotion/styled-import": "error"
     },
     "settings": {
         "import/resolver": {
