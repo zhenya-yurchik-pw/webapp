@@ -1,9 +1,8 @@
 import React from 'react';
-import countStore from '../../store/countStore';
 
-function Counter() {
+import countStore from 'store/countStore';
+
+export default function Counter() {
   const { count } = countStore();
   return <div>{count}</div>;
 }
-
-export default Counter;

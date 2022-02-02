@@ -1,5 +1,4 @@
 {
-
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -16,8 +15,20 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react"
+    "jsxImportSource": "@emotion/react",
+    "baseUrl": "src",
+    "paths": {
+//      "@/*": [
+//        "./*"
+//      ],
+      "components/*": [
+        "components/*"
+      ],
+      "store/*": [
+        "store/*"
+      ]
+    }
   },
-  "baseUrl": "src/",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/"],
+  "exclude": ["/node_modules/", ".serverless/**/*", ".webpack/**/*", "_warmup/**/*", "vscode/**/*", "lib/**/*", "tests"]
 }
