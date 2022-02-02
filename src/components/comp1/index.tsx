@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.css';
-
 import Component5 from '@utils/comps/comp5';
 
-function App() {
+function Component2() {
   return (
-    <div className="App">
+    <div>
       <Component5 />
     </div>
   );
 }
 
-export default App;
+export default Component2;

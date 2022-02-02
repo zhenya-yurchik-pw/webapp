@@ -19,9 +19,11 @@
     "plugins": [
         "react",
         "@typescript-eslint",
+        "import",
         "html"
     ],
     "rules": {
+        "import/no-unresolved": "error",
         "react/jsx-filename-extension": [
             1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
         ],
@@ -36,11 +38,19 @@
             }
         ]
     },
-    "settings": {
+    "settings":
+    {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
         "import/resolver": {
             "node": {
                 "extensions": [".js", ".jsx", ".ts", ".tsx"],
                 "moduleDirectory": ["node_modules", "src/"]
+            },
+            "typescript": {
+                "alwaysTryTypes": true,
+                "project": "./"
             }
         }
     }
