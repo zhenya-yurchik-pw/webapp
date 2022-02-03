@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Counter from 'components/Counter';
-import MinusButton from 'components/MinusButton';
-import PlusButton from 'components/PlusButton';
+import PlusButton from '@/components/PlusButton';
+import Counter from '@/components/Counter';
+import MinusButton from '@/components/MinusButton';
 
 const StyledCountPage = styled.div`
   display: flex;

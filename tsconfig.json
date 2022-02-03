@@ -16,19 +16,20 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "baseUrl": "src",
-    "paths": {
-//      "@/*": [
-//        "./*"
+    //    "baseUrl": "src",
+//    "paths": {
+////      "@/*": [
+////        "./*"
+////      ],
+//      "components/*": [
+//        "components/*"
 //      ],
-      "components/*": [
-        "components/*"
-      ],
-      "store/*": [
-        "store/*"
-      ]
-    }
+//      "store/*": [
+//        "store/*"
+//      ]
+//    }
   },
+  "extends": "./tsconfig.extend.json",
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/"],
   "exclude": ["/node_modules/", ".serverless/**/*", ".webpack/**/*", "_warmup/**/*", "vscode/**/*", "lib/**/*", "tests"]
 }

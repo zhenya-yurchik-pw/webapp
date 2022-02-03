@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import countStore from 'store/countStore';
+import countStore from '@/store/countStore';
 
 const StyledPlusButton = styled.button`
   display: flex;
