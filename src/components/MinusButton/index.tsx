@@ -18,10 +18,12 @@ function MinusButton() {
         margin-bottom: 25px;
         background-color: hotpink;
         border-radius: 4px;
-        height: 20px;
-        width: 50px;
+        height: 40px;
+        width: 150px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
       `}
-      color="white"
       onClick={minusCount}
     >
       -

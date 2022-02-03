@@ -10,9 +10,11 @@ const StyledPlusButton = styled.button`
   background-color: green;
   border-radius: 4px;
   color: ${(props) => props.color};
-  width: 50px;
-  height: 20px;
+  height: 40px;
+  width: 150px;
   margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
 `;
 
 function PlusButton() {

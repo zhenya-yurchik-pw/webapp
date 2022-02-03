@@ -1,17 +1,10 @@
 import React from 'react';
-import styled from '@emotion/styled';
 
 import PlusButton from '@/components/PlusButton';
 import Counter from '@/components/Counter';
 import MinusButton from '@/components/MinusButton';
 
-const StyledCountPage = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-`;
+import StyledCountPage from './styles';
 
 function CountPage() {
   return (
