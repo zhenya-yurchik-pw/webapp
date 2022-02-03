@@ -33,10 +33,14 @@ function MinusButton() {
     <button
       type="button"
       css={css`
-        padding: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
         background-color: hotpink;
-        font-size: 24px;
         border-radius: 4px;
+        height: 20px;
+        width: 50px;
       `}
       color="white"
       onClick={minusCount}

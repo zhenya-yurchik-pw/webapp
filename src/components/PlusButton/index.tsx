@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import countStore from '../../store/countStore';
+import countStore from 'store/countStore';
 
 const StyledPlusButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: green;
+  border-radius: 4px;
   color: ${(props) => props.color};
   width: 50px;
   height: 20px;
